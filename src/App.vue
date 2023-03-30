@@ -1,27 +1,18 @@
 <script>
-import MainTitle from './components/MainTitle.vue';
+    import AppMain from './components/AppMain.vue';
 
-export default {
-    components: {
-        MainTitle
-    },
-    data() {
-        return {
-            count: 0,
+    export default {
+        name: 'App',
+        components: {
+            AppMain,
         }
     }
-}
 </script>
 
 <template>
-    <MainTitle />
-
-    <button @click="count++">Count is: {{ count }}</button>
+    <AppMain />
 </template>
 
-<style scoped>
-button {
-  font-weight: bold;
-  color: red;
-}
+<style lang="scss">
+    @import "./style/main.scss";
 </style>
